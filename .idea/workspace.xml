@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59b2bc8e-42ca-49e1-9d6f-b844a7fdf972" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/FSMParse/FSMControllerVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FSMParse/FSMLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FSMParse/FSMLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FSMParse/FSMParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FSMParse/FSMParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/PanelFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/PanelFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/State/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/State/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/State/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/State/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/151220136.fsm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/151220136.fsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FSM.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FSM.g4" afterDir="false" />
-    </list>
+    <list default="true" id="59b2bc8e-42ca-49e1-9d6f-b844a7fdf972" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/State/StateMachine.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/GUI/PanelFrame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="256">
-              <caret line="137" column="31" lean-forward="true" selection-start-line="137" selection-start-column="31" selection-end-line="137" selection-end-column="31" />
+              <caret line="137" column="31" selection-start-line="137" selection-start-column="31" selection-end-line="137" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,8 +98,8 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/State/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+            <state relative-caret-position="170">
+              <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
               <folding>
                 <element signature="e#400#401#0" expanded="true" />
                 <element signature="e#431#432#0" expanded="true" />
@@ -177,7 +165,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="347" />
+    <option name="x" value="346" />
     <option name="y" value="325" />
     <option name="width" value="1750" />
     <option name="height" value="985" />
@@ -196,77 +184,6 @@
             <path>
               <item name="FiniteStateMachine" type="b2602c69:ProjectViewProjectNode" />
               <item name="FiniteStateMachine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FiniteStateMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FiniteStateMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FiniteStateMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FiniteStateMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FiniteStateMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FiniteStateMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FiniteStateMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FiniteStateMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Event" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FiniteStateMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FiniteStateMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="FSMParse" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FiniteStateMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FiniteStateMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FiniteStateMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FiniteStateMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="State" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FiniteStateMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FiniteStateMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Transition" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FiniteStateMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FiniteStateMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FiniteStateMachine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FiniteStateMachine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -287,7 +204,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/151220136.fsm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="terminal" />
@@ -370,16 +287,15 @@
       <workItem from="1531979356524" duration="354000" />
       <workItem from="1532417854078" duration="8544000" />
       <workItem from="1532494485823" duration="12525000" />
-      <workItem from="1532509457901" duration="15434000" />
+      <workItem from="1532509457901" duration="15734000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36857000" />
+    <option name="totallyTimeSpent" value="37157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Tool Output" order="0" weight="0.32914925" />
@@ -400,9 +316,9 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32914925" />
-      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.32914925" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32775453" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2386059" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.32914925" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32775453" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2386059" />
       <window_info anchor="bottom" id="Find" order="3" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="4" side_tool="true" />
@@ -739,7 +655,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/PanelFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
-          <caret line="137" column="31" lean-forward="true" selection-start-line="137" selection-start-column="31" selection-end-line="137" selection-end-column="31" />
+          <caret line="137" column="31" selection-start-line="137" selection-start-column="31" selection-end-line="137" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -760,7 +676,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/State/StateMachine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -783,8 +699,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/State/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+        <state relative-caret-position="170">
+          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
           <folding>
             <element signature="e#400#401#0" expanded="true" />
             <element signature="e#431#432#0" expanded="true" />
