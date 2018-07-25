@@ -15,37 +15,27 @@ state idle
 end
 
 state wrongTime1
-	actions{
-		increment;
-	}
+	actions increment;
 	151220136 => unlockDoor;
 	other => wrongTime2;
 end
 
 state wrongTime2
-	actions{
-		increment;
-	}
+	actions increment;
 	151220136 => unlockDoor;
 	other => wrongTime3;
 end
 
 state wrongTime3
-	actions{
-		increment;
-	}
+	actions increment;
 	151220136 => unlockDoor;
 	other => lockDoorForever;
 end
 
 state lockDoorForever
-	actions{
-		lockDoorForever;
-	}
-end
+	actions lockDoorForever;
+end 
 
 state unlockDoor
-	actions{
-		unlockDoor;
-	}
+	actions unlockDoor;
 end

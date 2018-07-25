@@ -1,0 +1,16 @@
+Transition=1
+State=2
+Events=3
+Commands=4
+Actions=5
+End=6
+Semicolon=7
+Whitespace=8
+ID=9
+'=>'=1
+'state'=2
+'events'=3
+'commands'=4
+'actions'=5
+'end'=6
+';'=7
