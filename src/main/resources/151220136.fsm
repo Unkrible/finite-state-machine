@@ -1,0 +1,51 @@
+events
+	151220136	DOOR_OPEN;
+	other	WRONG;
+end
+
+commands
+	increment INC_WRONG_TIME;
+	unlockDoor UNLOCK_DOOR;
+	lockDoorForever LOCK_DOOR_FOREVER;
+end
+
+state idle
+	151220136 => unlockDoor;
+	other => wrongTime1;
+end
+
+state wrongTime1
+	actions{
+		increment;
+	}
+	151220136 => unlockDoor;
+	other => wrongTime2;
+end
+
+state wrongTime2
+	actions{
+		increment;
+	}
+	151220136 => unlockDoor;
+	other => wrongTime3;
+end
+
+state wrongTime3
+	actions{
+		increment;
+	}
+	151220136 => unlockDoor;
+	other => lockDoorForever;
+end
+
+state lockDoorForever
+	actions{
+		lockDoorForever;
+	}
+end
+
+state unlockDoor
+	actions{
+		unlockDoor;
+	}
+end
