@@ -11,18 +11,33 @@ import java.util.List;
 import java.util.Map;
 
 public class State {
+    public static final String OTHER = "other";
+
     protected String name;
-    protected List<Command> actions = new LinkedList<Command>();
-    protected Map<String, Transition> transitions = new HashMap<String, Transition>();
-    protected Map<String, String> codes = new HashMap<>();
+    protected List<Command> actions;
+    protected Map<String, Transition> transitions;
+    protected Map<String, String> codes;
+
+    public State(String name){
+        this.name = name;
+        actions = new LinkedList<>();
+        transitions = new HashMap<>();
+        codes = new HashMap<>();
+    }
 
     public void addCommand(Command command){
-        assert null != command;
+        if(null == command) {
+            System.err.println("Error: null Command");
+            return;
+        }
         actions.add(command);
     }
 
     public void addTransition(Event event, State target){
-        assert null != target;
+        if(!(null != target && event != null)){
+            System.err.println("Error: add Transition");
+            return;
+        }
         this.transitions.put(event.getCode(), new Transition(this, target, event));
         this.codes.put(event.getName(), event.getCode());
     }
@@ -39,9 +54,10 @@ public class State {
         return transitions.containsKey(code);
     }
 
-
     public String getTransitionCode(String name){
-        return codes.getOrDefault(name, null);
+        if(codes.containsKey(name))
+            return codes.get(name);
+        return codes.get(State.OTHER);
     }
 
     public State targetState(String code){
@@ -50,7 +66,7 @@ public class State {
 
     public void executeActions(CommandChannel commandChannel){
         for(Command command : actions){
-            commandChannel.send(command.getCode());
+            commandChannel.send(command.getName());
         }
     }
 }

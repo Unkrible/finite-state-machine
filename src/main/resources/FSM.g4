@@ -14,9 +14,9 @@ command: name code Semicolon;
 states: state+;
 
 state: State name actions? transitions? End;
-actions: Actions name+ Semicolon;
+actions: Actions code+ Semicolon;
 transitions: transition+;
-transition: name Transition name Semicolon;
+transition: code Transition name Semicolon;
 
 Transition: '=>';
 State: 'state';
@@ -27,11 +27,11 @@ End: 'end';
 Semicolon: ';';
 
 Whitespace
-    :   [ \t]+
+    :   [ \r\t\n]+
         -> skip
     ;
-ID: LetterOrDigit+;
+ID: Char+;
 
 fragment Letter: [a-zA-Z_];
 fragment Digit: [0-9];
-fragment LetterOrDigit: Letter | Digit;
+fragment Char: Letter | Digit;

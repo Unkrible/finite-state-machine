@@ -1,41 +1,43 @@
 events
 	151220136	DOOR_OPEN;
+	reset	STATE_RESET;
 	other	WRONG;
 end
 
 commands
-	increment INC_WRONG_TIME;
-	unlockDoor UNLOCK_DOOR;
-	lockDoorForever LOCK_DOOR_FOREVER;
+	Please_Input_Password START_LOCK_DOOR;
+	Wrong_Pass_Word_1 INC_WRONG_TIME_1;
+	Wrong_Pass_Word_2 INC_WRONG_TIME_2;
+	Room_Open UNLOCK_DOOR;
+	Room_Lock_Forever LOCK_DOOR_FOREVER;
 end
 
 state idle
-	151220136 => unlockDoor;
-	other => wrongTime1;
+	actions START_LOCK_DOOR;
+	DOOR_OPEN => unlockDoor;
+	WRONG => wrongTime1;
+	STATE_RESET => idle;
 end
 
 state wrongTime1
-	actions increment;
-	151220136 => unlockDoor;
-	other => wrongTime2;
+	actions INC_WRONG_TIME_1;
+	DOOR_OPEN => unlockDoor;
+	WRONG => wrongTime2;
+	STATE_RESET => idle;
 end
 
 state wrongTime2
-	actions increment;
-	151220136 => unlockDoor;
-	other => wrongTime3;
-end
-
-state wrongTime3
-	actions increment;
-	151220136 => unlockDoor;
-	other => lockDoorForever;
+	actions INC_WRONG_TIME_2;
+	DOOR_OPEN => unlockDoor;
+	WRONG => lockDoorForever;
+	STATE_RESET => idle;
 end
 
 state lockDoorForever
-	actions lockDoorForever;
+	actions LOCK_DOOR_FOREVER;
 end 
 
 state unlockDoor
-	actions unlockDoor;
+	actions UNLOCK_DOOR;
+	STATE_RESET => idle;
 end

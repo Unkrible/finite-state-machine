@@ -57,13 +57,16 @@ public class PanelFrame extends JFrame {
         basePanel.add(textPanel, BorderLayout.NORTH);
         basePanel.add(buttonPanel, BorderLayout.CENTER);
 
+        // Reset Button
+        basePanel.add(this.getResetButton(), BorderLayout.EAST);
+
         this.add(basePanel);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.setVisible(true);
     }
 
     private JTextField getTextField(){
-        JTextField info = new JTextField(channel.getInfo(), 20);
+        JTextField info = new JTextField(channel.getInfo().replace("_", " "), 20);
 
         GraphicsEnvironment e = GraphicsEnvironment.getLocalGraphicsEnvironment();
         String[] fontName = e.getAvailableFontFamilyNames();
@@ -89,7 +92,7 @@ public class PanelFrame extends JFrame {
             digitButton.addActionListener(getChangeInfo());
             digitButton.addActionListener((e) ->
             {
-                if(sb.toString().equals(channel.getInfo())){
+                if(sb.toString().equals(channel.getInfo().replace("_", " "))){
                     sb.setLength(0);
                 }
                 sb.append(digit);
@@ -103,7 +106,11 @@ public class PanelFrame extends JFrame {
         JButton confirm = new JButton("Confirm");
         confirm.setForeground(Color.red);
         confirm.addActionListener(getChangeInfo());
-        confirm.addActionListener((event) -> {channel.sendByName(sb.toString()); sb.setLength(0); sb.append(channel.getInfo());});
+        confirm.addActionListener((event) -> {
+            channel.sendByName(sb.toString());
+            sb.setLength(0);
+            sb.append(channel.getInfo().replace("_", " "));
+        });
         return confirm;
     }
 
@@ -113,6 +120,18 @@ public class PanelFrame extends JFrame {
         clear.addActionListener(getChangeInfo());
         clear.addActionListener((e) -> sb.setLength(0));
         return clear;
+    }
+
+    private JButton getResetButton(){
+        JButton reset = new JButton("Reset");
+        reset.setForeground(Color.red);
+        reset.addActionListener(getChangeInfo());
+        reset.addActionListener((e) -> {
+            channel.sendByName("reset");
+            sb.setLength(0);
+            sb.append(channel.getInfo().replace("_", " "));
+        });
+        return reset;
     }
 
     private ActionListener getChangeInfo(){

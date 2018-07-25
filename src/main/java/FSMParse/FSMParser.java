@@ -527,11 +527,11 @@ public class FSMParser extends Parser {
 	public static class ActionsContext extends ParserRuleContext {
 		public TerminalNode Actions() { return getToken(FSMParser.Actions, 0); }
 		public TerminalNode Semicolon() { return getToken(FSMParser.Semicolon, 0); }
-		public List<NameContext> name() {
-			return getRuleContexts(NameContext.class);
+		public List<CodeContext> code() {
+			return getRuleContexts(CodeContext.class);
 		}
-		public NameContext name(int i) {
-			return getRuleContext(NameContext.class,i);
+		public CodeContext code(int i) {
+			return getRuleContext(CodeContext.class,i);
 		}
 		public ActionsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -560,7 +560,7 @@ public class FSMParser extends Parser {
 				{
 				{
 				setState(72);
-				name();
+				code();
 				}
 				}
 				setState(75); 
@@ -635,13 +635,13 @@ public class FSMParser extends Parser {
 	}
 
 	public static class TransitionContext extends ParserRuleContext {
-		public List<NameContext> name() {
-			return getRuleContexts(NameContext.class);
-		}
-		public NameContext name(int i) {
-			return getRuleContext(NameContext.class,i);
+		public CodeContext code() {
+			return getRuleContext(CodeContext.class,0);
 		}
 		public TerminalNode Transition() { return getToken(FSMParser.Transition, 0); }
+		public NameContext name() {
+			return getRuleContext(NameContext.class,0);
+		}
 		public TerminalNode Semicolon() { return getToken(FSMParser.Semicolon, 0); }
 		public TransitionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -661,7 +661,7 @@ public class FSMParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(84);
-			name();
+			code();
 			setState(85);
 			match(Transition);
 			setState(86);
@@ -699,10 +699,10 @@ public class FSMParser extends Parser {
 		"\65\7\b\2\2\65\r\3\2\2\2\66\67\5\b\5\2\678\5\n\6\289\7\t\2\29\17\3\2\2"+
 		"\2:<\5\22\n\2;:\3\2\2\2<=\3\2\2\2=;\3\2\2\2=>\3\2\2\2>\21\3\2\2\2?@\7"+
 		"\4\2\2@B\5\b\5\2AC\5\24\13\2BA\3\2\2\2BC\3\2\2\2CE\3\2\2\2DF\5\26\f\2"+
-		"ED\3\2\2\2EF\3\2\2\2FG\3\2\2\2GH\7\b\2\2H\23\3\2\2\2IK\7\7\2\2JL\5\b\5"+
+		"ED\3\2\2\2EF\3\2\2\2FG\3\2\2\2GH\7\b\2\2H\23\3\2\2\2IK\7\7\2\2JL\5\n\6"+
 		"\2KJ\3\2\2\2LM\3\2\2\2MK\3\2\2\2MN\3\2\2\2NO\3\2\2\2OP\7\t\2\2P\25\3\2"+
 		"\2\2QS\5\30\r\2RQ\3\2\2\2ST\3\2\2\2TR\3\2\2\2TU\3\2\2\2U\27\3\2\2\2VW"+
-		"\5\b\5\2WX\7\3\2\2XY\5\b\5\2YZ\7\t\2\2Z\31\3\2\2\2\t\"\62=BEMT";
+		"\5\n\6\2WX\7\3\2\2XY\5\b\5\2YZ\7\t\2\2Z\31\3\2\2\2\t\"\62=BEMT";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {
