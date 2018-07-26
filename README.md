@@ -217,6 +217,8 @@ public class Driver {
 
 ## 5. 执行结果
 
+执行时，先输入错误密码，再输入正确密码，最后重置关上密室并连续输入错误三次。
+
 ### 5.1 Idle
 
 ![idle](screenshots/idle.png)
