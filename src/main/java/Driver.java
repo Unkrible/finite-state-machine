@@ -14,7 +14,8 @@ import java.util.Properties;
 
 public class Driver {
     public static void main(String[] args) throws Exception{
-        CharStream stream = CharStreams.fromStream(Driver.class.getResourceAsStream("/151220136.fsm"), Charset.forName("UTF-8"));
+        String path = args.length == 1 ? args[0] : "/151220136.fsm";
+        CharStream stream = CharStreams.fromStream(Driver.class.getResourceAsStream(path), Charset.forName("UTF-8"));
         FSMParser parser = new FSMParser(new CommonTokenStream(new FSMLexer(stream)));
         FSMControllerVisitor visitor = new FSMControllerVisitor();
         visitor.visitProgram(parser.program());
